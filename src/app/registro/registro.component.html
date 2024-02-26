@@ -14,31 +14,38 @@
       <input type="text" id="apellido" name="apellido" [(ngModel)]="apellido" required>
     </div>
     <div>
-      <label for="nombreempresa">Empresa a la que pertenece:</label>
+      <label for="telefono">Telefono:</label>
     </div>
     <div>
-      <input type="text" id="nombreempresa" name="nombreempresa" [(ngModel)]="empresaalaquepertenece" required>
+      <input type="text" id="telefono" name="telefono" [(ngModel)]="telefono" required>
     </div>
     <div>
-      <label for="cargo">Cargo en la empresa:</label>
+      <label for="direccion">Direccion:</label>
     </div>
     <div>
-      <input type="text" id="cargo" name="cargo" [(ngModel)]="cargo" required>
+      <input type="text" id="direccion" name="direccion" [(ngModel)]="direccion" required>
     </div>
     <div>
-      <label for="nombre">Tipo de oficina:</label>
+      <label for="nombre">Nombre_usuario:</label>
     </div>
     <div>
-      <input type="text" id="tipooficina" name="tipooficina" [(ngModel)]="tipodeoficina" required>
+      <input type="text" id="nombre_usuario" name="Nombre_usuario" [(ngModel)]="nombre_usuario" required>
     </div>
     <div>
-      <label for="correo">Correo:</label>
+      <label for="correo">Correo_electronico:</label>
     </div>
     <div> 
-      <input type="email" id="correo" name="correo" [(ngModel)]="correo" required>
+      <input type="email" id="correo_electronico" name="correo_electronico" [(ngModel)]="correo_electronico" required>
     </div>
     <div>
-      <button type="submit">Registrarse</button>
+      <label for="contrasenia">Contraseña:</label>
+    </div>
+    <div> 
+      <input type="password" id="contrasenia" name="contrasenia" [(ngModel)]="contrasenia" required>
+
+    </div>
+    <div>
+      <button (click)="registrarUsuario()" type="submit">Registrarse</button>
     </div>
     </form>
   </div>

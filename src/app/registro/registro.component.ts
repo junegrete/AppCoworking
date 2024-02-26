@@ -6,11 +6,34 @@ import { Component } from '@angular/core';
   styleUrls: ['./registro.component.css']
 })
 export class RegistroComponent {
-nombre: any;
-apellido: any;
-empresaalaquepertenece: any;
-cargo: any;
-tipodeoficina: any;
-correo: any;
+nombre: string="";
+apellido: string="";
+telefono: string="";
+direccion: string="";
+nombre_usuario: string="";
+correo_electronico: string="";
+contrasenia: string="" ;
 
+registrarUsuario(){
+  fetch("http://localhost:8080/app/1/registro", {
+  method: "post",
+  headers: {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json'
+  },
+
+  //make sure to serialize your JSON body
+  body: JSON.stringify({
+    nombre: this.nombre ,
+    contrasenia: this.contrasenia
+  })
+})
+.then( (response) => { 
+   //do something awesome that makes the world a better place
+})
+.catch((reason)=>{
+
+});
+
+}
 }

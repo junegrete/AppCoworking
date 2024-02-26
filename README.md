@@ -14,5 +14,42 @@ Pago Integrado: Simplificamos el proceso de pago con opciones integradas para re
 
 Gestión de Recursos: Los administradores de espacios de coworking pueden utilizar herramientas de gestión para supervisar la disponibilidad de sus instalaciones.
 
+#Requisitos del Sistema
+
+Node.js 
+Angular CLI 
+Base de datos (MySQL)
+Servidor backend (Spring Boot)
+
+#Configuración del Entorno
+
+Clona el repositorio de la aplicación desde GitHub:
+
+git clone cuenta git
+Navega al directorio de la aplicación:
+cd app-coworking
+
+Instala las dependencias del servidor backend:
+cd backend
+npm install
+
+Configura las variables de entorno del servidor backend. Crea un archivo .env en el directorio backend y configura las variables necesarias, como la URL de la base de datos y las credenciales de autenticación.
+
+Inicia el servidor backend:
+npm start
+
+Instala las dependencias del cliente Angular:
+cd ../frontend
+npm install
+
+Configura las variables de entorno del cliente Angular. Crea un archivo .env en el directorio frontend y configura las variables necesarias, como la URL del servidor backend.
+
+Inicia la aplicación Angular:
+npm start
+
+#Spring 0,1,2 
+
+https://ideaboardz.com/retros/export/5197383/AppCoworking.pdf
+
 #Proyecto diseñado por 
 Julieta de los Angeles Negrete-2024

@@ -6,6 +6,8 @@ import { CarritoDePagoComponent } from './carrito-de-pago/carrito-de-pago.compon
 import { OficinasComponent } from './oficinas/oficinas.component';
 import { HomeComponent } from './home/home.component';
 import { RegistroComponent } from './registro/registro.component';
+import { LoginComponent } from './login/login.component';
+import { AdministracionComponent } from './administracion/administracion.component';
 
 const routes: Routes = [
   { path: "home", component: HomeComponent},
@@ -14,8 +16,11 @@ const routes: Routes = [
   { path: "reservacion", component: ReservacionComponent},
   { path: "contacto", component: ContactoComponent},
   { path: "registro", component: RegistroComponent},
-  {path: "**", redirectTo: "home", pathMatch: "full"}
+  {path: "**", redirectTo: "home", pathMatch: "full"},
+  {path: "login", component: LoginComponent},
+  {path:"administracion",component: AdministracionComponent},
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
